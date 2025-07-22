@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container grid grid-cols-1 gap-4 m-4">
+      <header class="font-semibold text-center m-2">Password Generator</header>
+      <div>
+        <label for="length">Choose Length</label>
+        <input type="range" id="length" min="8" max="16" />
+        <span id="lenDis"></span>
+      </div>
+      <div>
+        <label for="includeNum">Number</label>
+        <input class="ml-4" type="checkbox" name="Number" id="includeNum" />
+      </div>
+      <div>
+        <label for="includeUpper">Upper Case</label>
+        <input class="ml-4" type="checkbox" name="Upper" id="includeUpper" />
+      </div>
+      <div>
+        <label for="includeSpecial">Special Characters</label>
+        <input
+          class="ml-4"
+          type="checkbox"
+          name="Special"
+          id="includeSpecial"
+        />
+      </div>
+      <div class="text-center">
+        <button
+          class="bg-cyan-600 rounded-lg p-2 hover:bg-cyan-400"
+          id="genPass"
+        >
+          Generate
+        </button>
+      </div>
+      <div>
+        <label for="genPass">Generated Password : </label>
+        <span id="disPass"></span>
+      </div>
+      <div class="text-center">
+        <button class="bg-green-500 rounded p-1" id="copyBtn">
+          Copy to clipboard
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
