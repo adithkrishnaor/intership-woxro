@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="font-semibold text-center m-2">Form</header>
+      <hr />
+      <form id="form" class="grid grid-cols-1 gap-4 m-4 text-center">
+        <div>
+          <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            class="border border-gray-500 p-1 rounded focus:outline-none"
+          />
+          <span class="text-red-500" id="name-error"></span>
+        </div>
+        <div>
+          <input
+            type="number"
+            id="num"
+            placeholder="Number"
+            class="border border-gray-500 p-1 rounded focus:outline-none"
+          />
+          <span class="text-red-500" id="num-error"></span>
+        </div>
+        <div>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            class="border border-gray-500 p-1 rounded focus:outline-none"
+          />
+          <span class="text-red-500" id="email-error"></span>
+        </div>
+        <div>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            class="border border-gray-500 p-1 rounded focus:outline-none"
+          />
+          <span class="text-red-500" id="password-error"></span>
+        </div>
+        <div>
+          <button
+            id="submit"
+            type="submit"
+            class="bg-blue-500 text-white p-2 rounded"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
