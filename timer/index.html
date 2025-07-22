@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center font-semibold">Countdown Timer</header>
+      <div class="grid grid-cols-3 gap-4 mt-4">
+        <input
+          class="border-2"
+          type="number"
+          id="hour"
+          placeholder="Hour"
+          max="23"
+          min="0"
+        />
+        <input
+          class="border-2 p-2"
+          type="number"
+          id="minute"
+          placeholder="Minute"
+          max="59"
+          min="0"
+        />
+        <input
+          class="border-2 p-2"
+          type="number"
+          id="second"
+          placeholder="Second"
+          max="59"
+          min="0"
+        />
+      </div>
+      <div class="text-center mt-4">
+        <button
+          class="bg-green-700 text-white p-2 w-14 rounded hover:bg-green-500"
+          id="start"
+        >
+          Start
+        </button>
+        <button
+          class="bg-red-700 text-white p-2 w-14 rounded hover:bg-red-500"
+          id="reset"
+        >
+          Reset
+        </button>
+      </div>
+      <div class="text-center mt-4">
+        <span id="timerDisplay"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

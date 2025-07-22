@@ -20,8 +20,8 @@ function renderTask() {
     const li = document.createElement("li");
     li.className = "bg-gray-200 mt-1";
     li.innerHTML = `
-    <span>${task.text}</span>
     <div>
+    <span>${task.text}</span>
         <button class="delete bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700" data-id="${task.id}">Delete</button>
     </div>`;
     taskList.appendChild(li);
