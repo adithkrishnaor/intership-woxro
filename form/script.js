@@ -44,3 +44,11 @@ function validateForm() {
 
   return isValid;
 }
+
+submitButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (validateForm()) {
+    alert("Form submitted successfully!");
+    form.reset();
+  }
+});

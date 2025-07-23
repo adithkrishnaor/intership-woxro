@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container grid grid-cols-1 gap-4 m-4">
+      <header class="text-center font-semibold">Currency Converter</header>
+      <hr />
+      <div>
+        <select
+          name="fromCurrency"
+          id="fromCurrency"
+          class="border border-gray-500 p-1 rounded focus:outline-none"
+        ></select>
+        To
+        <select
+          name="toCurrency"
+          id="toCurrency"
+          class="border border-gray-500 p-1 rounded focus:outline-none"
+        ></select>
+      </div>
+
+      <div>
+        <input
+          type="number"
+          id="amount"
+          placeholder="Amount"
+          class="border border-gray-500 p-1 rounded focus:outline-none"
+        />
+      </div>
+      <div>
+        <span id="result" class="text-red-500"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
