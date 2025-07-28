@@ -1,48 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="src/output.css"> -->
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav class="flex items-center px-6 py-4 font-mono ">
-            <div class="font-bold text-4xl ml-20 text-[#495567]">scoot</div>
-            <div class="ml-10 flex gap-6 text-[#939CAA]">
-            <a href="about.html">About</a>
-                        <a href="location.html">Location</a>
-                                    <a href="careers.html">Careers</a>
-            </div>
-            <div class="ml-auto mr-10">
-            <button class="bg-[#FCB72B] text-white p-3 w-40">Get Scootin</button>
-            </div>
-        </nav>
-        <div>
-            <div class="bg-[#495567] relative">
-                <img src="./../assets/Home2.jpg" alt="scoot" class="w-full h-[500px] object-cover opacity-80">
-                <img src="./../assets/home3.png" alt="arrow" class="absolute top-[305px] left-[1000px] w-[447px] h-[138px] -translate-x-1/2 -translate-y-1/2">
-                <div class="absolute inset-20 top-50 ml-[80px] text-white font-bold text-4xl">
-                    <h2>Scooter sharing <br> made simple</h2>
-                </div>
-                <div class="absolute  top-[210px] h-[15px] w-[200px] bg-[#FCB72B] my-6"></div>
-                <div class="absolute inset-60 top-[180px] text-white font-semibold text-xl h-32 w-[450px] text-justify">
-                    <p>
-                    Scoot takes the hassle out of urban mobility. Our bikes are
-                    placed in convenient locations in each of our cities. Use our
-                    app to locate the nearest bike, unlock it with a tap, and you’re
-                    away!
-                    </p>
-            </div>
-            <div class="absolute inset-60 top-[350px]">
-            <button class="btn">Get Scootin</button>
-            </div>
-            </div>
-        
+      <nav class="flex items-center px-6 py-4 font-mono">
+        <a href="home.html" class="font-bold text-4xl md:ml-20 text-[#495567]"
+          >scoot</a
+        >
+        <div class="sm:ml-10 flex gap-6 text-[#939CAA]">
+          <a href="about.html">About</a>
+          <a href="location.html">Location</a>
+          <a href="careers.html">Careers</a>
         </div>
+        <div class="mx-auto md:mr-5 lg:mr-10">
+          <button
+            class="bg-[#FCB72B] text-white p-3 w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+          >
+            Get Scootin
+          </button>
+        </div>
+      </nav>
+      <div class="bg-[#495567] relative">
+        <img
+          src="./../assets/Home2.jpg"
+          alt="scoot"
+          class="w-full h-[400px] object-cover opacity-80"
+        />
+
+        <div
+          class="absolute inset-20 top-12 ml-8 text-white font-bold text-4xl"
+        >
+          <h2>Scooter sharing<br />made simple</h2>
+        </div>
+        <!-- <div
+            class="absolute top-[210px] h-[15px] w-[200px] bg-[#FCB72B] my-6"
+          ></div> -->
+        <div
+          class="absolute inset-60 top-[180px] text-white font-normal text-xl h-32 w-[450px] text-justify"
+        >
+          <p>
+            Scoot takes the hassle out of urban mobility. Our bikes are placed
+            in convenient locations in each of our cities. Use our app to locate
+            the nearest bike, unlock it with a tap, and you’re away!
+          </p>
+        </div>
+        <div class="absolute inset-60 top-[320px]">
+          <button
+            class="bg-[#FCB72B] text-white p-3 w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+          >
+            Get Scootin
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 m-20">
+        <div>
+          <div class="rounded-full h-20 w-20 bg-[#FCB72B] mb-4"></div>
+          <p class="text-[#495567] text-xl font-mono font-semibold mb-4">
+            Locate with app
+          </p>
+          <p class="text-[#939CAA] font-lexenda text-sm">
+            Use the app to find the nearest scooter to you. We are continuously
+            placing scooters in the areas with most demand, so one should never
+            be too far away.
+          </p>
+        </div>
+        <div>
+          <div class="rounded-full h-20 w-20 bg-[#FCB72B] mb-4"></div>
+          <p class="text-[#495567] text-xl font-mono font-semibold mb-4">
+            Pick your scooter
+          </p>
+          <p class="text-[#939CAA] font-lexenda text-sm">
+            We show the most important info for the scooters closest to you. So
+            you know how much charge they have left and can see roughly how much
+            it will cost.
+          </p>
+        </div>
+        <div>
+          <div class="rounded-full h-20 w-20 bg-[#FCB72B] mb-4"></div>
+          <p class="text-[#495567] text-xl font-mono font-semibold mb-4">
+            Enjoy the ride
+          </p>
+          <p class="text-[#939CAA] font-lexenda text-sm">
+            Scan the QR code and the bike will unlock. Retract the cable lock,
+            put on a helmet, and you’re off! Always lock bikes away from
+            walkways and accessibility ramps.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col-reverse lg:grid md:grid-cols-2 gap-4 p-1 lg:p-10 mt-10"
+      >
+        <div class="p-10 text-center lg:text-left">
+          <p class="text-2.5xl lg:text-4xl font-bold text-[#495567] font-mono">
+            Easy to use
+            <br />riding telemetry
+          </p>
+          <p
+            class="text-[#939CAA] font-lexend mt-5 lg:text-lg lg:text-left text-xs text-center"
+          >
+            The Scoot app is available with riding telemetry. This means it can
+            show you your average speed, how long you've been using the scooter,
+            your traveling distance, and many more things all in an easy to use
+            app.
+          </p>
+          <button
+            class="bg-[#FCB72B] text-white mt-10 p-3 w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            src="/assets/home-2.png"
+            alt=""
+            class="rounded-full object-cover lg:w-80 lg:h-80 w-64 h-64"
+          />
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse lg:grid md:grid-cols-2 lg:grid-cols-2 gap-4 p-1 lg:p-10"
+      >
+        <div class="lg:order-2 p-10 text-center lg:text-left">
+          <p class="text-2.5xl lg:text-4xl font-bold text-[#495567] font-mono">
+            Coming to a city<br />near you
+          </p>
+          <p
+            class="text-[#939CAA] font-lexend mt-5 lg:text-lg lg:text-left text-xs text-center"
+          >
+            Scoot is available in 4 major cities so far. We’re expanding
+            rapidly, so be sure to let us know if you want to see us in your
+            hometown. We’re aiming to let our scooters loose on 23 cities over
+            the coming year.
+          </p>
+          <button
+            class="bg-[#FCB72B] text-white mt-10 p-3 w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="flex lg:order-1 justify-center items-center">
+          <img
+            src="/assets/home-3.png"
+            alt=""
+            class="rounded-full object-cover lg:w-80 lg:h-80 w-64 h-64"
+          />
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse lg:grid md:grid-cols-2 gap-4 p-1 lg:p-10 mt-10"
+      >
+        <div class="p-10 text-center lg:text-left">
+          <p class="text-2.5xl lg:text-4xl font-bold text-[#495567] font-mono">
+            Zero hassle<br />payments
+          </p>
+          <p
+            class="text-[#939CAA] font-lexend mt-5 lg:text-lg lg:text-left text-xs text-center"
+          >
+            Our payment is as easy as one two three. We accept most credit cards
+            and debit cards. You can also link your PayPal account inside the
+            app. Need to pay later? No worries! You can defer payment for up to
+            a month.
+          </p>
+          <button
+            class="bg-[#FCB72B] text-white mt-10 p-3 w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            src="/assets/home-4.png"
+            alt=""
+            class="rounded-full object-cover lg:w-80 lg:h-80 w-64 h-64"
+          />
+        </div>
+      </div>
     </div>
-</body>
+    <footer>
+      <div
+        class="px-5 py-25 mx-auto flex items-center lg:flex-row flex-col bg-[#495567]"
+      >
+        <p class="text-white text-4xl font-mono font-bold lg:ml-35">
+          Sign up and<br />Scoot off today
+        </p>
+
+        <div
+          class="flex lg:ml-auto lg:mr-0 mt-8 mx-auto items-center flex-shrink-0 space-x-4"
+        >
+          <button
+            class="bg-[#E5ECF4] inline-flex py-3 text-[#495567] px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="w-6 h-6"
+              viewBox="0 0 305 305"
+            >
+              <path
+                d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"
+              ></path>
+              <path
+                d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"
+              ></path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs mb-1">Available on the</span>
+              <span class="title-font font-medium">AppStore</span>
+            </span>
+          </button>
+          <button
+            class="bg-[#E5ECF4] inline-flex py-3 text-[#495567] px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="w-6 h-6"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
+              ></path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none ]">
+              <span class="text-xs mb-1">Get it on</span>
+              <span class="title-font font-medium">GooglePlay</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="px-6 py-4 font-mono bg-[#333A44] text-white md:flex md:items-center md:justify-between"
+      >
+        <a
+          href="home.html"
+          class="font-bold text-4xl block md:inline md:ml-20 mb-4 md:mb-0 text-center md:text-left"
+          >scoot</a
+        >
+        <div
+          class="flex flex-col md:flex-row items-center gap-4 md:gap-10 text-[#939CAA] mb-4 md:mb-0"
+        >
+          <a href="about.html" class="sm:ml-10 flex gap-6 text-[#939CAA]"
+            >About</a
+          >
+          <a href="location.html" class="sm:ml-10 flex gap-6 text-[#939CAA]"
+            >Location</a
+          >
+          <a href="careers.html" class="sm:ml-10 flex gap-6 text-[#939CAA]"
+            >Careers</a
+          >
+        </div>
+        <div class="flex justify-center md:block md:mr-5 lg:mr-10">
+          <button
+            class="bg-[#FCB72B] text-white p-3 w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+          >
+            FB
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
