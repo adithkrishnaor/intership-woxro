@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <nav class="flex items-center px-6 py-4 font-mono">
+    <header class="md:flex md:items-center md:px-6 md:py-4 font-mono hidden">
       <a href="home.html" class="font-bold text-4xl md:ml-20 text-[#495567]"
         >scoot</a
       >
@@ -23,13 +23,39 @@
           Get Scootin
         </button>
       </div>
-    </nav>
+    </header>
+
+    <div class="md:hidden">
+      <button class="relative group">
+        <div
+          class="relative flex overflow-hidden items-center justify-center rounded-full w-[40px] h-[40px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+        >
+          <div
+            class="flex flex-col justify-between w-[15px] h-[15px] transform transition-all duration-300 origin-center overflow-hidden group-focus:translate-x-1.5"
+          >
+            <div
+              class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg] group-focus:w-2/3 delay-150"
+            ></div>
+            <div
+              class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10"
+            ></div>
+            <div
+              class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg] group-focus:w-2/3 delay-150"
+            ></div>
+          </div>
+        </div>
+      </button>
+      <div class="text-center absolute inset-0 top-1">
+        <a href="home.html" class="font-bold text-3xl text-[#495567]">scoot</a>
+      </div>
+    </div>
+
     <div class="container">
       <div class="bg-[#495567] relative">
         <img
           src="/assets/location-1.png"
           alt="location page"
-          class="w-full h-20 object-cover opacity-50"
+          class="w-full h-20 object-cover opacity-20"
         />
         <p
           class="text-white font-mono absolute top-1/2 left-1/8 transform -translate-y-1/2 font-bold text-4xl"
@@ -37,11 +63,78 @@
           Locations
         </p>
       </div>
-      <div class="p-10 mt-20 relative">
-        <img src="/assets/map.png" alt="" class="w-full" />
+      <div class="p-10 mt-5 md:mt-20 relative">
+        <img src="/assets/location-2.png" alt="" class="w-full opacity-20" />
+        <div
+          class="absolute lg:top-52 md:top-20 md:left-36 lg:left-72 h-20 w-28 hidden md:block"
+        >
+          <img src="/assets/location-3.png" alt="" class="relative" />
+          <p
+            class="absolute left-6 top-3 font-bold font-mono text-sm text-[#495567]"
+          >
+            New York
+          </p>
+        </div>
+
+        <div
+          class="absolute lg:top-36 md:top-16 md:left-72 lg:left-[640px] h-20 w-28 hidden md:block"
+        >
+          <img src="/assets/location-3.png" alt="" class="relative" />
+          <p
+            class="absolute left-5 top-0 font-bold p-3 font-mono text-sm text-[#495567]"
+          >
+            London
+          </p>
+        </div>
+        <div
+          class="absolute lg:top-56 md:top-24 md:right-20 lg:right-52 h-20 w-28 hidden md:block"
+        >
+          <img src="/assets/location-3.png" alt="" class="relative" />
+          <p
+            class="absolute left-5 top-0 font-bold p-3 font-mono text-sm text-[#495567]"
+          >
+            Yokohama
+          </p>
+        </div>
+        <div
+          class="absolute lg:bottom-72 md:bottom-36 md:right-32 lg:right-72 h-20 w-28 hidden md:block"
+        >
+          <img src="/assets/location-3.png" alt="" class="relative" />
+          <p
+            class="absolute left-5 top-0 font-bold p-3 font-mono text-sm text-[#495567]"
+          >
+            Jakarta
+          </p>
+        </div>
+        <div
+          class="rounded-full bg-[#FCB72B] h-4 w-4 absolute left-28 top-20 md:hidden"
+        ></div>
+        <div
+          class="rounded-full bg-[#FCB72B] h-4 w-4 absolute left-48 top-16 md:hidden"
+        ></div>
+        <div
+          class="rounded-full bg-[#FCB72B] h-4 w-4 absolute right-20 top-20 md:hidden"
+        ></div>
+        <div
+          class="rounded-full bg-[#FCB72B] h-4 w-4 absolute right-24 top-32 md:hidden"
+        ></div>
+      </div>
+      <div class="md:hidden relative text-center text-[#495567] font-bold">
+        <div class="bg-[#fcb72b] opacity-25 p-2 m-8">
+          <p class="z-10">New York</p>
+        </div>
+        <div class="bg-[#fcb72b] opacity-25 p-2 m-8">
+          <p class="z-10">London</p>
+        </div>
+        <div class="bg-[#fcb72b] opacity-25 p-2 m-8">
+          <p class="z-10">Yokohama</p>
+        </div>
+        <div class="bg-[#fcb72b] opacity-25 p-2 m-8">
+          <p class="z-10">Jakarta</p>
+        </div>
       </div>
       <div
-        class="grid grid-rows-2 md:grid-rows-2 lg:grid-cols-3 m-1 gap-2 text-center"
+        class="grid grid-rows-2 md:grid-rows-2 lg:grid-cols-3 m-6 gap-2 text-center"
       >
         <p class="font-bold text-4xl text-[#495567] mt-5 mb-5">
           Your city <br />not listed?
@@ -52,7 +145,7 @@
           message us by clicking the link or messaging us on social.
         </p>
         <button
-          class="bg-[#FCB72B] text-white font-semibold p-2 h-10 md:w-30 m-1 ml-20 md:mx-auto"
+          class="bg-[#FCB72B] text-white font-semibold p-2 h-10 ml-20 mr-20 md:w-30 m-1 lg:ml-20 md:mx-auto"
         >
           Message Us
         </button>
@@ -67,7 +160,7 @@
         </p>
 
         <div
-          class="flex lg:ml-auto lg:mr-0 mt-8 mx-auto items-center flex-shrink-0 space-x-4"
+          class="flex lg:ml-auto lg:mr-10 mt-8 mx-auto items-center flex-shrink-0 space-x-4"
         >
           <button
             class="bg-[#E5ECF4] inline-flex py-3 text-[#495567] px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none"
@@ -111,32 +204,20 @@
         </div>
       </div>
 
-      <div
-        class="px-6 py-4 font-mono bg-[#333A44] text-white md:flex md:items-center md:justify-between"
-      >
-        <a
-          href="home.html"
-          class="font-bold text-4xl block md:inline md:ml-20 mb-4 md:mb-0 text-center md:text-left"
+      <div class="flex items-center px-6 py-4 font-mono bg-[#333A44]">
+        <a href="home.html" class="font-bold text-4xl md:ml-20 text-white"
           >scoot</a
         >
-        <div
-          class="flex flex-col md:flex-row items-center gap-4 md:gap-10 text-[#939CAA] mb-4 md:mb-0"
-        >
-          <a href="about.html" class="sm:ml-10 flex gap-6 text-[#939CAA]"
-            >About</a
-          >
-          <a href="location.html" class="sm:ml-10 flex gap-6 text-[#939CAA]"
-            >Location</a
-          >
-          <a href="careers.html" class="sm:ml-10 flex gap-6 text-[#939CAA]"
-            >Careers</a
-          >
+        <div class="sm:ml-10 flex gap-6 text-[#939CAA]">
+          <a href="about.html">About</a>
+          <a href="location.html">Location</a>
+          <a href="careers.html">Careers</a>
         </div>
-        <div class="flex justify-center md:block md:mr-5 lg:mr-10">
+        <div class="mx-auto md:mr-5 lg:mr-10">
           <button
-            class="bg-[#FCB72B] text-white p-3 w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+            class="bg-[#FCB72B] rounded-full text-white p-3 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
           >
-            FB
+            fb
           </button>
         </div>
       </div>
