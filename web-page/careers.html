@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Careers</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./../src/output.css" />
   </head>
   <body>
     <header>
@@ -258,21 +259,29 @@
 
     <footer>
       <div
-        class="h-60 px-5 py-25 mt-10 mx-auto flex items-center lg:flex-row flex-col bg-[#495567]"
+        class="h-80 md:h-80 px-5 py-16 md:py-25 mt-10 md:-mt-16 mx-auto flex items-center lg:flex-row flex-col bg-[#495567]"
       >
-        <div class="text-center justify-center">
-          <p class="text-white text-4xl font-mono font-bold lg:ml-36">
-            Sign up and<br />Scoot off today
-          </p>
-        </div>
+        <p
+          class="text-white text-center text-3xl md:text-5xl md:mx-32 font-space-mono font-bold mt-6 md:-mt-12 lg:hidden"
+        >
+          Sign up and Scoot off today
+        </p>
+
+        <p
+          class="text-white text-4xl font-space-mono font-bold ml-20 hidden lg:block"
+        >
+          Sign up and <br />
+          Scoot off today
+        </p>
 
         <div
-          class="flex lg:ml-auto lg:mr-10 mt-8 mx-auto items-center flex-shrink-0 space-x-4"
+          class="flex lg:ml-auto lg:mr-10 mt-8 md:mt-12 lg:mt-0 px-1/2 items-center flex-shrink-0"
         >
-          <button
-            class="bg-[#E5ECF4] inline-flex py-3 text-[#495567] px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none"
-          >
-            <svg
+          <div class="flex flex-row gap-4">
+            <button
+              class="bg-[#E5ECF4] inline-flex h-12 w-36 md:w-[170px] md:h-14 py-3 text-[#495567] px-3 rounded-sm items-center hover:bg-gray-200 focus:outline-none"
+            >
+              <!-- <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               class="w-6 h-6"
@@ -284,16 +293,23 @@
               <path
                 d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"
               ></path>
-            </svg>
-            <span class="ml-4 flex items-start flex-col leading-none">
-              <span class="text-xs mb-1">Available on the</span>
-              <span class="title-font font-medium">AppStore</span>
-            </span>
-          </button>
-          <button
-            class="bg-[#E5ECF4] inline-flex py-3 text-[#495567] px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none"
-          >
-            <svg
+            </svg> -->
+              <img src="assets/apple.png" alt="" />
+              <span class="ml-2 flex items-start flex-col leading-none">
+                <span
+                  class="text-[8px] md:text-xs mb-1 font-semibold lg:font-bold font-space-mono"
+                  >Available on the</span
+                >
+                <span
+                  class="title-font font-semibold lg:font-bold font-space-mono"
+                  >AppStore</span
+                >
+              </span>
+            </button>
+            <button
+              class="bg-[#E5ECF4] mx-auto inline-flex h-12 w-40 md:w-[170px] md:h-14 py-3 text-[#495567] px-3 rounded-sm items-center hover:bg-gray-200 focus:outline-none"
+            >
+              <!-- <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               class="w-6 h-6"
@@ -302,31 +318,78 @@
               <path
                 d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
               ></path>
-            </svg>
-            <span class="ml-4 flex items-start flex-col leading-none ]">
-              <span class="text-xs mb-1">Get it on</span>
-              <span class="title-font font-medium">GooglePlay</span>
-            </span>
-          </button>
+            </svg> -->
+              <img src="assets/playstore.png" alt="" />
+              <span class="ml-4 flex items-start flex-col leading-none">
+                <span
+                  class="text-[8px] md:text-xs mb-1 font-space-mono font-semibold"
+                  >Get it on</span
+                >
+                <span class="title-font font-semibold font-space-mono"
+                  >GooglePlay</span
+                >
+              </span>
+            </button>
+          </div>
         </div>
+        <img
+          src="assets/tab1.png"
+          alt=""
+          class="hidden md:block absolute left-0 mt-[62px] lg:hidden"
+        />
+        <img
+          src="assets/tab2.png"
+          alt="lg half circle"
+          class="hidden lg:block absolute left-12 lg:mt-[162px]"
+        />
+        <img
+          src="assets/tab2.png"
+          alt="md + half"
+          class="hidden md:block absolute left-48 mt-[62px] lg:mt-[162px] lg:ml-64"
+        />
+        <img
+          src="assets/tab3.png"
+          alt=""
+          class="hidden md:block absolute right-0 mt-[70px] lg:mt-[169px]"
+        />
+        <img
+          src="assets/partialCircleHomeP.png"
+          alt=""
+          class="absolute right-0 mt-[82px] md:hidden"
+        />
+        <img
+          src="assets/borderCircleHomeP.png"
+          alt=""
+          class="absolute left-0 mt-[76px] md:hidden"
+        />
       </div>
 
-      <div class="flex items-center flex-col md:flex-row bg-[#333A44]">
-        <div class="flex items-center px-6 py-4 font-mono">
-          <a href="home.html" class="font-bold text-4xl md:ml-20 text-white"
+      <div class="flex items-center flex-col md:h-24 md:flex-row bg-[#333A44]">
+        <div class="flex items-center px-6 md:px-0 py-4 font-mono">
+          <a
+            href="home.html"
+            class="font-bold text-4xl mt-10 md:mt-0 md:ml-8 lg:ml-28 text-white"
             >scoot</a
           >
         </div>
         <div class="mt-5 md:mt-0 md:ml-10 flex gap-6 text-[#939CAA]">
-          <a href="about.html" class="hover:text-[#FCB72B]">About</a>
+          <a href="about.html" class="hover:text-[#FCB72B] font-space-mono"
+            >About</a
+          >
         </div>
         <div class="mt-5 md:mt-0 md:ml-10 flex gap-6 text-[#939CAA]">
-          <a href="location.html" class="hover:text-[#FCB72B]">Location</a>
+          <a href="location.html" class="hover:text-[#FCB72B] font-space-mono"
+            >Location</a
+          >
         </div>
         <div class="mt-5 md:mt-0 md:ml-10 flex gap-6 text-[#939CAA]">
-          <a href="careers.html" class="hover:text-[#FCB72B]">Careers</a>
+          <a href="careers.html" class="hover:text-[#FCB72B] font-space-mono"
+            >Careers</a
+          >
         </div>
-        <div class="mt-10 md:mt-0 flex gap-8 mx-auto md:mr-5 lg:mr-40">
+        <div
+          class="md:mt-0 flex gap-8 mx-auto md:mr-5 md:mb-0 mb-16 mt-16 lg:mr-40"
+        >
           <li class="list-none">
             <a href="#" class="text-[#FCB72B] hover:text-[#E5ECF4]">
               <svg
