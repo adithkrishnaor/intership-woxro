@@ -13,7 +13,7 @@
         <a href="home.html" class="font-bold text-4xl md:ml-20 text-[#495567]"
           >scoot</a
         >
-        <div class="sm:ml-10 flex gap-6 text-[#939CAA]">
+        <div class="ml-10 flex gap-6 text-[#939CAA]">
           <a href="about.html" class="hover:text-[#FCB72B]">About</a>
           <a href="location.html" class="hover:text-[#FCB72B]">Location</a>
           <a href="careers.html" class="hover:text-[#FCB72B]">Careers</a>
@@ -29,7 +29,7 @@
       <div class="md:hidden relative">
         <button
           id="hamburg"
-          class="fixed absolute top-5 left-5 text-[#FCB72B] text-2xl z-50"
+          class="fixed top-5 left-5 text-[#FCB72B] text-2xl z-50"
         >
           ☰
         </button>
@@ -80,21 +80,29 @@
           alt="about page"
           class="w-full h-40 object-cover opacity-20"
         />
+        <img
+          src="assets/careersMdC.png"
+          alt=""
+          class="absolute hidden md:block right-0 top-1/3"
+        />
         <p
-          class="text-white font-mono ml-48 absolute top-1/2 left-1/8 transform -translate-y-1/2 font-bold text-6xl"
+          class="text-white font-space-mono absolute top-1/2 left-36 md:left-28 lg:left-20 transform -translate-y-1/2 font-bold text-4xl md:text-5xl lg:ml-6"
         >
           Careers
         </p>
       </div>
+
       <div
-        class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 p-1 lg:p-10 mt-10"
+        class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 mt-10 md:mt-28 lg:mt-16"
       >
-        <div class="p-10 text-center lg:text-left">
-          <p class="text-2.5xl lg:text-4xl font-bold text-[#495567] font-mono">
+        <div class="text-center lg:text-left mt-10">
+          <p
+            class="text-3xl lg:text-4xl lg:ml-20 font-bold text-[#495567] font-space-mono"
+          >
             Care to join our<br />mission?
           </p>
           <p
-            class="text-[#939CAA] font-lexend mt-5 lg:text-lg lg:text-left text-xs text-center"
+            class="text-[#939CAA] font-lexend-deca mt-6 md:text-xs lg:text-sm px-5 md:px-32 lg:px-20 lg:w-[550px] lg:text-left text-center"
           >
             We’re always looking for ambitious individuals to help us on our
             journey. If you’re passionate about our mission to provide clean,
@@ -102,7 +110,7 @@
             you!
           </p>
           <button
-            class="bg-[#FCB72B] text-white mt-10 p-3 w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+            class="bg-[#FCB72B] text-white font-bold lg:font-semibold font-space-mono mt-8 p-3 w-40 md:w-36 md:p-2 lg:ml-20 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
           >
             Say Hello
           </button>
@@ -112,62 +120,120 @@
           <img
             src="/assets/home4.png"
             alt="arrow"
-            class="absolute hidden md:block inset-10 mt-40 h-40 w-[630px] ml-20"
+            class="absolute hidden md:block right-0 mt-56 h-40 w-[630px] ml-20 z-999"
+          />
+          <img
+            src="/assets/careersSmAr.png"
+            alt="arrow"
+            class="absolute md:hidden right-0 mt-40"
           />
           <img
             src="/assets/careers-1.png"
             alt=""
-            class="rounded-full object-cover lg:w-80 lg:h-80 w-64 h-64"
+            class="rounded-full object-cover w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 lg:mr-24"
+          />
+          <img
+            src="assets/aboutT2.png"
+            alt="half circle"
+            class="absolute hidden md:block right-0 h-72 lg:h-[400px]"
           />
         </div>
       </div>
 
-      <div class="p-10">
+      <div class="p-2">
         <p
-          class="text-center text-3xl lg:text-4xl font-bold text-[#495567] font-mono m-15"
+          class="text-center text-3xl lg:text-4xl font-bold text-[#495567] font-space-mono mt-20 mb-14"
         >
           Why join us?
         </p>
-        <div class="lg:grid lg:grid-cols-3 lg:gap-10 m-10 text-center">
-          <div class="mt-5">
-            <img
-              src="/assets/about-3.png"
-              alt=""
-              class="rounded-full h-32 w-32 mx-auto"
-            />
-            <p class="text-[#495567] font-semibold font-mono mb-5 mt-5">
+
+        <div class="lg:grid lg:grid-cols-3 text-center lg:px-8">
+          <div class="mt-5 lg:mt-12">
+            <div class="relative">
+              <img
+                src="/assets/about-3.png"
+                alt=""
+                class="rounded-full h-60 w-60 md:h-48 md:w-48 mx-auto"
+              />
+              <div
+                class="absolute top-52 left-32 md:top-40 md:left-[342px] h-24 w-24 md:h-16 md:w-16 lg:top-40 lg:left-[135px] rounded-full bg-[#FCB72B]"
+              >
+                <p
+                  class="text-[#495567] mt-8 md:mt-5 text-2xl md:text-lg font-space-mono font-bold"
+                >
+                  01
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-[#495567] font-semibold font-space-mono text-2xl md:text-lg mb-5 mt-20 md:mt-14"
+            >
               Our tech
             </p>
-            <p class="text-[#939CAA]">
+            <p
+              class="text-[#939CAA] mx-8 md:mx-44 md:text-sm lg:mx-8 lg:text-xs"
+            >
               We’re using cutting edge technology to drive accessible urban
               transportation forward. Our fully electric scooters are a joy to
               ride!
             </p>
           </div>
-          <div class="mt-5">
-            <img
-              src="/assets/about-4.png"
-              alt=""
-              class="rounded-full lg:rounded-full object-cover w-32 h-32 mx-auto lg:w-50 lg:h-50 lg:mx-auto"
-            />
-            <p class="text-[#495567] font-semibold font-mono mb-5 mt-5">
+
+          <div class="mt-12">
+            <div class="relative">
+              <img
+                src="/assets/about-4.png"
+                alt=""
+                class="rounded-full h-60 w-60 md:h-48 md:w-48 mx-auto"
+              />
+              <div
+                class="absolute top-52 left-32 md:top-40 md:left-[342px] h-24 w-24 md:h-16 md:w-16 lg:top-40 lg:left-[135px] rounded-full bg-[#FCB72B]"
+              >
+                <p
+                  class="text-[#495567] mt-8 md:mt-5 text-2xl md:text-lg font-space-mono font-bold"
+                >
+                  02
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-[#495567] font-semibold font-space-mono text-2xl md:text-lg mb-5 mt-20 md:mt-14"
+            >
               Our integrity
             </p>
-            <p class="text-[#939CAA]">
+            <p
+              class="text-[#939CAA] mx-8 md:mx-44 md:text-sm lg:mx-8 lg:text-xs"
+            >
               We are fully committed to deliver a great yet safe, sustainable
               micro-mobility experience in every city we serve.
             </p>
           </div>
-          <div class="mt-5">
-            <img
-              src="/assets/about-5.png"
-              alt=""
-              class="rounded-full lg:rounded-full object-cover w-32 h-32 mx-auto lg:w-50 lg:h-50 lg:mx-auto"
-            />
-            <p class="text-[#495567] font-semibold font-mono mb-5 mt-5">
+
+          <div class="mt-12">
+            <div class="relative">
+              <img
+                src="/assets/about-5.png"
+                alt=""
+                class="rounded-full h-60 w-60 md:h-48 md:w-48 mx-auto"
+              />
+              <div
+                class="absolute top-52 left-32 md:top-40 md:left-[342px] h-24 w-24 md:h-16 md:w-16 lg:top-40 lg:left-[135px] rounded-full bg-[#FCB72B]"
+              >
+                <p
+                  class="text-[#495567] mt-8 md:mt-5 text-2xl md:text-lg font-space-mono font-bold"
+                >
+                  03
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-[#495567] font-semibold font-space-mono text-2xl md:text-lg mb-5 mt-20 md:mt-14"
+            >
               Our community
             </p>
-            <p class="text-[#939CAA]">
+            <p
+              class="text-[#939CAA] mx-8 md:mx-44 md:text-sm lg:mx-8 lg:text-xs"
+            >
               We support every community we serve. All workers are paid a living
               wage based on their location and are Scoot employees.
             </p>
@@ -175,80 +241,86 @@
         </div>
       </div>
 
-      <div class="ml-20 mr-20 mb-20">
+      <div class="mx-8 mt-36 md:mt-20 mb-28 md:mb-36 lg:mb-48 lg:px-8">
         <div class="md:grid md:grid-cols-2 md:gap-4 bg-[#F2F5F9] p-8">
-          <div class="text-center lg:text-left">
-            <p class="font-bold font-mono text-xl">General Manager</p>
-            <p class="font-lexend text-md">Jakarta, Indonesia</p>
+          <div class="text-center md:text-left">
+            <p class="font-bold font-space-mono text-xl">General Manager</p>
+            <p class="font-lexend-deca text-md">Jakarta, Indonesia</p>
           </div>
           <div class="text-center mt-4 md:mt-0 md:justify-self-end">
             <button
-              class="bg-[#FCB72B] text-white font-mono p-3 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+              class="bg-[#FCB72B] text-white font-space-mono font-semibold py-4 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+
+        <div class="md:grid md:grid-cols-2 md:gap-4 bg-[#F2F5F9] mt-5 p-8">
+          <div class="text-center md:text-left">
+            <p class="font-bold font-space-mono text-xl">UI/UX Designer</p>
+            <p class="font-lexend-deca text-md">Yokohama, Japan</p>
+          </div>
+          <div class="text-center mt-4 md:mt-0 md:justify-self-end">
+            <button
+              class="bg-[#FCB72B] text-white font-space-mono font-semibold py-4 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="md:grid md:grid-cols-2 md:gap-4 bg-[#F2F5F9] mt-5 py-8 px-3"
+        >
+          <div class="text-center md:text-left md:ml-5">
+            <p class="font-bold font-space-mono text-xl">
+              Blog Content Copywriter
+            </p>
+            <p class="font-lexend-deca text-md">New York, United States</p>
+          </div>
+          <div class="text-center mt-4 md:mt-0 md:justify-self-end md:mr-5">
+            <button
+              class="bg-[#FCB72B] text-white font-space-mono font-semibold py-4 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
             >
               Apply
             </button>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-4 bg-[#F2F5F9] mt-5 p-8">
-          <div class="text-center lg:text-left">
-            <p class="font-bold font-mono text-xl">UI/UX Designer</p>
-            <p class="font-lexend text-md">Yokohama, Japan</p>
+          <div class="text-center md:text-left">
+            <p class="font-bold font-space-mono text-xl">Graphic Designer</p>
+            <p class="font-lexend-deca text-md">New York, United States</p>
           </div>
           <div class="text-center mt-4 md:mt-0 md:justify-self-end">
             <button
-              class="bg-[#FCB72B] text-white font-mono p-3 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+              class="bg-[#FCB72B] text-white font-space-mono font-semibold py-4 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
             >
               Apply
             </button>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-4 bg-[#F2F5F9] mt-5 p-8">
-          <div class="text-center lg:text-left">
-            <p class="font-bold font-mono text-xl">Blog Content Copywriter</p>
-            <p class="font-lexend text-md">New York, United States</p>
+          <div class="text-center md:text-left">
+            <p class="font-bold font-space-mono text-xl">Fleet Supervisor</p>
+            <p class="font-lexend-deca text-md">Jakarta, Indonesia</p>
           </div>
           <div class="text-center mt-4 md:mt-0 md:justify-self-end">
             <button
-              class="bg-[#FCB72B] text-white font-mono p-3 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+              class="bg-[#FCB72B] text-white font-space-mono font-semibold py-4 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
             >
               Apply
             </button>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-4 bg-[#F2F5F9] mt-5 p-8">
-          <div class="text-center lg:text-left">
-            <p class="font-bold font-mono text-xl">Graphic Designer</p>
-            <p class="font-lexend text-md">New York, United States</p>
+          <div class="text-center md:text-left">
+            <p class="font-bold font-space-mono text-xl">UX Analyst</p>
+            <p class="font-lexend-deca text-md">London, United Kingdom</p>
           </div>
           <div class="text-center mt-4 md:mt-0 md:justify-self-end">
             <button
-              class="bg-[#FCB72B] text-white font-mono p-3 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
-            >
-              Apply
-            </button>
-          </div>
-        </div>
-        <div class="md:grid md:grid-cols-2 md:gap-4 bg-[#F2F5F9] mt-5 p-8">
-          <div class="text-center lg:text-left">
-            <p class="font-bold font-mono text-xl">Fleet Supervisor</p>
-            <p class="font-lexend text-md">Jakarta, Indonesia</p>
-          </div>
-          <div class="text-center mt-4 md:mt-0 md:justify-self-end">
-            <button
-              class="bg-[#FCB72B] text-white font-mono p-3 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
-            >
-              Apply
-            </button>
-          </div>
-        </div>
-        <div class="md:grid md:grid-cols-2 md:gap-4 bg-[#F2F5F9] mt-5 p-8">
-          <div class="text-center lg:text-left">
-            <p class="font-bold font-mono text-xl">UX Analyst</p>
-            <p class="font-lexend text-md">London, United Kingdom</p>
-          </div>
-          <div class="text-center mt-4 md:mt-0 md:justify-self-end">
-            <button
-              class="bg-[#FCB72B] text-white font-mono p-3 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
+              class="bg-[#FCB72B] text-white font-space-mono font-semibold py-4 w-64 md:w-40 hover:bg-transparent hover:text-[#FCB72B] hover:ring-2 hover:ring-[#FCB72B]"
             >
               Apply
             </button>
