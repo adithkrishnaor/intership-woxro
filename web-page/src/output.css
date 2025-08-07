@@ -1545,6 +1545,11 @@
       top: calc(var(--spacing) * 24);
     }
   }
+  .lg\:top-36 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 36);
+    }
+  }
   .lg\:top-40 {
     @media (width >= 64rem) {
       top: calc(var(--spacing) * 40);
@@ -1608,6 +1613,16 @@
   .lg\:left-40 {
     @media (width >= 64rem) {
       left: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:left-\[120px\] {
+    @media (width >= 64rem) {
+      left: 120px;
+    }
+  }
+  .lg\:left-\[122px\] {
+    @media (width >= 64rem) {
+      left: 122px;
     }
   }
   .lg\:left-\[135px\] {
@@ -2174,6 +2189,11 @@
       font-weight: var(--font-weight-semibold);
     }
   }
+  .xl\:top-40 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 40);
+    }
+  }
   .xl\:top-44 {
     @media (width >= 80rem) {
       top: calc(var(--spacing) * 44);
@@ -2204,9 +2224,19 @@
       left: calc(var(--spacing) * 44);
     }
   }
+  .xl\:left-48 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 48);
+    }
+  }
   .xl\:left-\[77\.px\] {
     @media (width >= 80rem) {
       left: 77.px;
+    }
+  }
+  .xl\:left-\[135px\] {
+    @media (width >= 80rem) {
+      left: 135px;
     }
   }
   .xl\:left-\[527px\] {
@@ -2394,6 +2424,26 @@
       left: 11750px;
     }
   }
+  .xl\:mx-4 {
+    @media (width >= 80rem) {
+      margin-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .xl\:mx-16 {
+    @media (width >= 80rem) {
+      margin-inline: calc(var(--spacing) * 16);
+    }
+  }
+  .xl\:mx-20 {
+    @media (width >= 80rem) {
+      margin-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:mx-24 {
+    @media (width >= 80rem) {
+      margin-inline: calc(var(--spacing) * 24);
+    }
+  }
   .xl\:-mt-2 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * -2);
@@ -2459,6 +2509,11 @@
       margin-top: calc(var(--spacing) * 8);
     }
   }
+  .xl\:mt-9 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 9);
+    }
+  }
   .xl\:mt-10 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * 10);
@@ -2482,6 +2537,11 @@
   .xl\:mt-24 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * 24);
+    }
+  }
+  .xl\:mt-26 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 26);
     }
   }
   .xl\:mt-28 {
@@ -2574,6 +2634,11 @@
       margin-top: 600px;
     }
   }
+  .xl\:mr-6 {
+    @media (width >= 80rem) {
+      margin-right: calc(var(--spacing) * 6);
+    }
+  }
   .xl\:mr-8 {
     @media (width >= 80rem) {
       margin-right: calc(var(--spacing) * 8);
@@ -2582,6 +2647,21 @@
   .xl\:mr-10 {
     @media (width >= 80rem) {
       margin-right: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:mr-12 {
+    @media (width >= 80rem) {
+      margin-right: calc(var(--spacing) * 12);
+    }
+  }
+  .xl\:mr-16 {
+    @media (width >= 80rem) {
+      margin-right: calc(var(--spacing) * 16);
+    }
+  }
+  .xl\:mr-20 {
+    @media (width >= 80rem) {
+      margin-right: calc(var(--spacing) * 20);
     }
   }
   .xl\:mb-28 {
@@ -2994,6 +3074,11 @@
       width: 650px;
     }
   }
+  .xl\:w-\[700px\] {
+    @media (width >= 80rem) {
+      width: 700px;
+    }
+  }
   .xl\:w-\[750px\] {
     @media (width >= 80rem) {
       width: 750px;
@@ -3019,6 +3104,11 @@
       width: 1300px;
     }
   }
+  .xl\:w-\[7000px\] {
+    @media (width >= 80rem) {
+      width: 7000px;
+    }
+  }
   .xl\:w-auto {
     @media (width >= 80rem) {
       width: auto;
@@ -3032,6 +3122,16 @@
   .xl\:flex-row {
     @media (width >= 80rem) {
       flex-direction: row;
+    }
+  }
+  .xl\:p-3 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 3);
+    }
+  }
+  .xl\:p-4 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 4);
     }
   }
   .xl\:p-10 {
@@ -3060,6 +3160,12 @@
     @media (width >= 80rem) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .xl\:text-6xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
   .xl\:text-lg {
