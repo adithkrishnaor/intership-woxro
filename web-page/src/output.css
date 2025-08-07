@@ -1174,6 +1174,11 @@
       left: 342px;
     }
   }
+  .md\:z-999 {
+    @media (width >= 48rem) {
+      z-index: 999;
+    }
+  }
   .md\:m-10 {
     @media (width >= 48rem) {
       margin: calc(var(--spacing) * 10);
