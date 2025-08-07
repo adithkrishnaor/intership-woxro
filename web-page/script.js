@@ -21,3 +21,21 @@ document.addEventListener("click", (e) => {
     menu.classList.remove("translate-x-0");
   }
 });
+
+let isOpen = false;
+
+hamburg.addEventListener("click", () => {
+  isOpen = !isOpen;
+
+  if (isOpen) {
+    menu.classList.remove("-translate-x-full");
+    hamburg.innerText = "X";
+    hamburg.classList.remove("text-[#FCB72B]");
+    hamburg.classList.add("text-[#FCB72B]");
+  } else {
+    menu.classList.add("-translate-x-full");
+    hamburg.innerText = "☰";
+    hamburg.classList.remove("text-white");
+    hamburg.classList.add("text-[#FCB72B]");
+  }
+});
