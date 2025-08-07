@@ -2493,6 +2493,16 @@
       margin-top: 600px;
     }
   }
+  .xl\:mr-8 {
+    @media (width >= 80rem) {
+      margin-right: calc(var(--spacing) * 8);
+    }
+  }
+  .xl\:mr-10 {
+    @media (width >= 80rem) {
+      margin-right: calc(var(--spacing) * 10);
+    }
+  }
   .xl\:mb-28 {
     @media (width >= 80rem) {
       margin-bottom: calc(var(--spacing) * 28);
@@ -2531,6 +2541,11 @@
   .xl\:-ml-10 {
     @media (width >= 80rem) {
       margin-left: calc(var(--spacing) * -10);
+    }
+  }
+  .xl\:-ml-12 {
+    @media (width >= 80rem) {
+      margin-left: calc(var(--spacing) * -12);
     }
   }
   .xl\:-ml-16 {
@@ -2598,6 +2613,11 @@
       margin-left: calc(var(--spacing) * -72);
     }
   }
+  .xl\:ml-2 {
+    @media (width >= 80rem) {
+      margin-left: calc(var(--spacing) * 2);
+    }
+  }
   .xl\:ml-4 {
     @media (width >= 80rem) {
       margin-left: calc(var(--spacing) * 4);
@@ -2628,6 +2648,11 @@
       margin-left: calc(var(--spacing) * 12);
     }
   }
+  .xl\:ml-14 {
+    @media (width >= 80rem) {
+      margin-left: calc(var(--spacing) * 14);
+    }
+  }
   .xl\:ml-16 {
     @media (width >= 80rem) {
       margin-left: calc(var(--spacing) * 16);
@@ -2636,6 +2661,16 @@
   .xl\:ml-20 {
     @media (width >= 80rem) {
       margin-left: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:ml-24 {
+    @media (width >= 80rem) {
+      margin-left: calc(var(--spacing) * 24);
+    }
+  }
+  .xl\:ml-28 {
+    @media (width >= 80rem) {
+      margin-left: calc(var(--spacing) * 28);
     }
   }
   .xl\:ml-30 {
@@ -2718,9 +2753,19 @@
       height: 100px;
     }
   }
+  .xl\:h-\[300px\] {
+    @media (width >= 80rem) {
+      height: 300px;
+    }
+  }
   .xl\:h-\[400px\] {
     @media (width >= 80rem) {
       height: 400px;
+    }
+  }
+  .xl\:h-\[450px\] {
+    @media (width >= 80rem) {
+      height: 450px;
     }
   }
   .xl\:h-\[500px\] {
@@ -2811,6 +2856,11 @@
   .xl\:w-\[400px\] {
     @media (width >= 80rem) {
       width: 400px;
+    }
+  }
+  .xl\:w-\[450px\] {
+    @media (width >= 80rem) {
+      width: 450px;
     }
   }
   .xl\:w-\[500px\] {
