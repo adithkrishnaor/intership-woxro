@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,17 +17,18 @@
     <script>
       // Initialize theme before React loads to prevent flash
       (function () {
-        const stored = localStorage.getItem("theme");
-        const systemPrefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-        const shouldBeDark = stored ? stored === "dark" : systemPrefersDark;
-
-        if (shouldBeDark) {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
+        try {
+          const stored = localStorage.getItem("theme");
+          const systemPrefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          const shouldBeDark = stored ? stored === "dark" : systemPrefersDark;
+          if (shouldBeDark) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        } catch {}
       })();
     </script>
     <div id="root"></div>
