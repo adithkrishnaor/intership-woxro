@@ -11,7 +11,7 @@ const ShoppingCart = () => {
       model: "128 GB",
       price: 899.0,
       quantity: 1,
-      image: "/api/placeholder/80/80",
+      image: "/iphone14.png",
       total: 899.0,
     },
     {
@@ -22,7 +22,7 @@ const ShoppingCart = () => {
       price: 989.0,
       originalPrice: 1299.0,
       quantity: 1,
-      image: "/api/placeholder/80/80",
+      image: "/ipadpro.png",
       total: 989.0,
       isDiscounted: true,
     },
@@ -33,7 +33,7 @@ const ShoppingCart = () => {
       model: "44 mm",
       price: 429.0,
       quantity: 2,
-      image: "/api/placeholder/80/80",
+      image: "/watch.png",
       total: 858.0,
     },
   ]);
@@ -45,7 +45,7 @@ const ShoppingCart = () => {
       price: 340.99,
       originalPrice: 430.0,
       rating: 4,
-      image: "/api/placeholder/200/200",
+      image: "/iphone14blue.png",
       badge: "SALE",
       badgeColor: "bg-red-500",
     },
@@ -54,7 +54,7 @@ const ShoppingCart = () => {
       name: "Apple iPhone 14 128GB Blue",
       price: 899.0,
       rating: 5,
-      image: "/api/placeholder/200/200",
+      image: "/iphone14blue.png",
       wishlist: true,
       compare: true,
     },
@@ -63,14 +63,14 @@ const ShoppingCart = () => {
       name: "Sony DualSense Edge Controller",
       price: 200.0,
       rating: 4,
-      image: "/api/placeholder/200/200",
+      image: "/iphone14blue.png",
     },
     {
       id: 4,
       name: "Apple MacBook Pro 13 M2",
       price: 1200.0,
       rating: 4,
-      image: "/api/placeholder/200/200",
+      image: "/mac.png",
       badge: "NEW",
       badgeColor: "bg-blue-500",
     },
@@ -169,8 +169,18 @@ const ShoppingCart = () => {
                         >
                           <td className="py-4">
                             <div className="flex items-center space-x-4">
-                              <div className="w-20 h-20 rounded-lg flex items-center justify-center">
-                                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg"></div>
+                              <div className="w-20 h-20 rounded-lg flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                                <img
+                                  src={item.image}
+                                  alt={item.name}
+                                  className="w-16 h-16 object-contain rounded-lg"
+                                  onError={(e) => {
+                                    e.target.style.display = "none";
+                                    e.target.nextSibling.style.display =
+                                      "block";
+                                  }}
+                                />
+                                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg hidden"></div>
                               </div>
                               <div>
                                 <h3 className="text-md text-[#181D25] dark:text-white">
@@ -399,7 +409,7 @@ const ShoppingCart = () => {
 
           {/* Trending Products */}
           <div className="mt-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            <h2 className="text-2xl font-bold dark:text-white text-gray-900 mb-8">
               Trending products
             </h2>
 
@@ -407,11 +417,20 @@ const ShoppingCart = () => {
               {trendingProducts.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-white rounded-lg shadow-sm overflow-hidden group"
+                  className=" rounded-lg shadow-sm overflow-hidden group"
                 >
                   <div className="relative">
-                    <div className="aspect-square bg-gray-100 flex items-center justify-center">
-                      <div className="w-32 h-32 bg-gradient-to-br from-gray-400 to-gray-600 rounded-lg"></div>
+                    <div className="aspect-square flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-32 h-32 object-contain rounded-lg"
+                        onError={(e) => {
+                          e.target.style.display = "none";
+                          e.target.nextSibling.style.display = "block";
+                        }}
+                      />
+                      <div className="w-32 h-32 bg-gradient-to-br from-gray-400 to-gray-600 rounded-lg hidden"></div>
                     </div>
 
                     {/* Badge */}
@@ -445,7 +464,7 @@ const ShoppingCart = () => {
                     </div>
 
                     {/* Product Name */}
-                    <h3 className="font-medium text-gray-900 mb-2 line-clamp-2">
+                    <h3 className="font-medium dark:text-white text-gray-900 mb-2 line-clamp-2">
                       {product.name}
                     </h3>
 
@@ -462,9 +481,48 @@ const ShoppingCart = () => {
                     </div>
 
                     {/* Add to Cart Button */}
-                    <button className="w-full mt-3 bg-gray-100 hover:bg-blue-500 hover:text-white py-2 rounded-lg transition-colors flex items-center justify-center space-x-2">
-                      <span>🛒</span>
-                      <span>Add to Cart</span>
+                    <button className="w-10 h-10 mt-3 bg-[#EEF1F6] hover:bg-[#F55266] py-2 rounded-lg transition-colors flex items-center justify-center space-x-2">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_10785_4008)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M6.00065 13.9169C5.95463 13.9169 5.91732 13.9542 5.91732 14.0002C5.91732 14.0463 5.95463 14.0836 6.00065 14.0836C6.04668 14.0836 6.08398 14.0463 6.08398 14.0002C6.08398 13.9542 6.04668 13.9169 6.00065 13.9169ZM4.75065 14.0002C4.75065 13.3099 5.3103 12.7502 6.00065 12.7502C6.69101 12.7502 7.25065 13.3099 7.25065 14.0002C7.25065 14.6906 6.69101 15.2502 6.00065 15.2502C5.3103 15.2502 4.75065 14.6906 4.75065 14.0002Z"
+                            fill="#333D4C"
+                            className="hover:fill-white"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M13.334 13.9169C13.288 13.9169 13.2507 13.9542 13.2507 14.0002C13.2507 14.0463 13.288 14.0836 13.334 14.0836C13.38 14.0836 13.4173 14.0463 13.4173 14.0002C13.4173 13.9542 13.38 13.9169 13.334 13.9169ZM12.084 14.0002C12.084 13.3099 12.6436 12.7502 13.334 12.7502C14.0243 12.7502 14.584 13.3099 14.584 14.0002C14.584 14.6906 14.0243 15.2502 13.334 15.2502C12.6436 15.2502 12.084 14.6906 12.084 14.0002Z"
+                            fill="#333D4C"
+                            className="hover:fill-white"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.0839844 0.666913C0.0839844 0.344747 0.345152 0.08358 0.667318 0.08358H3.33398C3.61202 0.08358 3.85141 0.279805 3.90597 0.55243L4.4793 3.41691H15.334C15.5078 3.41691 15.6726 3.49445 15.7834 3.6284C15.8943 3.76235 15.9396 3.93875 15.907 4.10952L14.8395 9.70723C14.7519 10.1484 14.5118 10.5448 14.1614 10.8268C13.8126 11.1076 13.3765 11.2574 12.9289 11.2502H6.45909C6.01147 11.2574 5.57538 11.1076 5.22656 10.8268C4.87629 10.5449 4.63631 10.1487 4.54859 9.70773L3.43444 4.14112C3.43023 4.12414 3.42677 4.10687 3.42408 4.08935L2.85584 1.25025H0.667318C0.345152 1.25025 0.0839844 0.989079 0.0839844 0.666913ZM4.71281 4.58358L5.69281 9.47994C5.7271 9.65259 5.82102 9.80767 5.95814 9.91805C6.09525 10.0284 6.26682 10.0871 6.44281 10.0837L6.45398 10.0836H12.934L12.9452 10.0837C13.1212 10.0871 13.2927 10.0284 13.4298 9.91805C13.5664 9.80808 13.6602 9.65372 13.6948 9.48184L13.6952 9.47994L14.6289 4.58358H4.71281Z"
+                            fill="#333D4C"
+                            className="hover:fill-white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_10785_4008">
+                            <rect
+                              width="16"
+                              height="16"
+                              fill="white"
+                              transform="translate(0 0.000244141)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
                     </button>
                   </div>
                 </div>

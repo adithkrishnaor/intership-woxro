@@ -11,7 +11,7 @@ const Home = () => {
             <p className="text-[#4E5562] dark:text-[#CAD0D9] pt-12 text-lg lg:text-left lg:pl-24">
               Feel the real quality sound
             </p>
-            <p className="text-[#181D25] dark:text-white text-4xl lg:text-6xl font-bold px-6 mt-6 lg:px-24 lg:text-left">
+            <p className="text-[#181D25] dark:text-white lg:leading-18 text-4xl lg:text-6xl font-bold px-6 mt-6 lg:px-24 lg:text-left">
               Headphones ProMax
             </p>
             <button className="bg-[#F55266] hover:bg-red-600 mt-8 p-3 lg:ml-24 w-36 rounded-xl text-white transition-colors flex items-center justify-center">
@@ -177,11 +177,11 @@ const Home = () => {
           New arrivals
         </p>
         <div className="lg:grid lg:grid-cols-3">
-          <div className="w-full h-[450px] lg:w-[400px] lg:h-[600px] bg-white mt-4 relative ">
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-xl z-10"></div>
+          <div className="w-full h-[450px] lg:w-[400px] lg:h-140 mt-4 relative ">
+            <div className="absolute top-0 left-0 w-full h-140 bg-black opacity-40 rounded-xl z-10"></div>
             <img
               src="../../home2.jpg"
-              className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
+              className="absolute top-0 left-0 w-full h-140 object-cover rounded-xl"
               alt="mac background"
             />
             <img
@@ -189,13 +189,13 @@ const Home = () => {
               className="absolute top-0 left-0 z-40 object-cover mt-4 px-6"
               alt="laptop"
             />
-            <p className="absolute bottom-[120px] lg:bottom-[200px] left-1/4 lg:left-1/6 text-white text-4xl lg:text-6xl font-bold font-inter z-20">
+            <p className="absolute bottom-[120px] lg:bottom-[170px] left-1/4 lg:left-1/6 text-white text-4xl lg:text-6xl font-bold font-inter z-20">
               MacBook
             </p>
-            <p className="absolute bottom-[85px] lg:bottom-[160px] left-1/4 lg:left-[120px] text-[#CAD0D9] text-lg z-20">
+            <p className="absolute bottom-[85px] lg:bottom-[140px] left-1/4 lg:left-[120px] text-[#CAD0D9] text-lg z-20">
               Be Pro Anywhere
             </p>
-            <button className="bg-[#F55266] hover:bg-red-600 mt-8 p-2 w-36 px-3 rounded-lg text-white transition-colors flex items-center justify-center absolute bottom-[25px] lg:bottom-[100px] left-1/4 lg:left-[120px] z-20">
+            <button className="bg-[#F55266] hover:bg-red-600 mt-8 p-2 w-36 px-3 rounded-lg text-white transition-colors flex items-center justify-center absolute bottom-[25px] lg:bottom-[80px] left-1/4 lg:left-[120px] z-20">
               From $1,199
               <svg
                 width="20"
@@ -213,7 +213,7 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="lg:mt-12">
+          <div className="lg:mt-8">
             <div className="flex flex-row items-center mt-3 -ml-2">
               <div>
                 <img src="../../watch.png" alt="watch" className="w-30 h-30" />
@@ -526,7 +526,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="lg:mt-12">
+          <div className="lg:mt-8">
             <div className="flex flex-row items-center mt-3 -ml-2">
               <div>
                 <img
@@ -863,13 +863,15 @@ const Home = () => {
 
         <div>
           <div className="flex flex-row justify-between items-center border-b-2 border-[#E0E5EB] dark:border-[#333D4C] py-5 lg:mb-4">
-            <p className="font-semibold text-2xl mt-12">Trending products</p>
+            <p className="font-semibold text-2xl lg:text-3xl mt-12">
+              Trending products
+            </p>
             <p className="mt-12 text-sm">View all {">"} </p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-1">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-4">
             <div className="flex flex-col items-center mt-6 -ml-2 relative">
               <div>
-                <div className="bg-[#F03D3D] text-white text-xs absolute left-3 py-1 px-2 rounded-md">
+                <div className="bg-[#F03D3D] text-white text-xs absolute left-3 lg:left-14 py-1 px-2 rounded-md">
                   -21%
                 </div>
                 <div className="p-2 border-2  border-[#E0E5EB] dark:border-[#333D4C] rounded-lg absolute right-3 lg:hidden">
@@ -906,7 +908,11 @@ const Home = () => {
               </div>
 
               <div>
-                <img src="../../vr.png" alt="vr" className="w-30 h-30 mt-4" />
+                <img
+                  src="../../vr.png"
+                  alt="vr"
+                  className="w-30 h-30 lg:w-48 lg:h-48 mt-4"
+                />
               </div>
               <div className="ml-2">
                 <div className="flex  gap-1">
@@ -1055,7 +1061,7 @@ const Home = () => {
                 <img
                   src="../../iphone.png"
                   alt="iphone"
-                  className="w-30 h-30 mt-4"
+                  className="w-30 h-30 lg:w-48 lg:h-48 mt-4"
                 />
               </div>
               <div className="ml-2">
@@ -1201,7 +1207,7 @@ const Home = () => {
                 <img
                   src="../../watch.png"
                   alt="watch"
-                  className="w-30 h-30 m-2"
+                  className="w-30 h-30 lg:w-48 lg:h-48 m-2"
                 />
               </div>
               <div className="ml-2">
@@ -1311,7 +1317,7 @@ const Home = () => {
 
             <div className="flex flex-col items-center mt-6 -ml-2 relative">
               <div>
-                <div className="bg-[#2F6ED5] text-white text-xs absolute left-3 py-1 px-3 rounded-md">
+                <div className="bg-[#2F6ED5] text-white text-xs absolute left-3 lg:left-14 py-1 px-3 rounded-md">
                   New
                 </div>
                 <div className="p-2 border-2  border-[#E0E5EB] dark:border-[#333D4C] rounded-lg absolute right-3 lg:hidden">
@@ -1350,7 +1356,7 @@ const Home = () => {
                 <img
                   src="../../mac.png"
                   alt="Mac laptop"
-                  className="w-30 h-30 mt-3"
+                  className="w-30 h-30 lg:w-48 lg:h-48 mt-3"
                 />
               </div>
               <div className="ml-2">
@@ -1499,7 +1505,7 @@ const Home = () => {
                 <img
                   src="../../tab.png"
                   alt="Ipad tablet"
-                  className="w-30 h-30"
+                  className="w-30 h-30 lg:w-48 lg:h-48"
                 />
               </div>
               <div className="ml-2">
@@ -1644,7 +1650,7 @@ const Home = () => {
                 <img
                   src="../../earbud.png"
                   alt="earbud"
-                  className="w-30 h-30"
+                  className="w-30 h-30 lg:w-48 lg:h-48"
                 />
               </div>
               <div className="ml-2">
@@ -1791,7 +1797,7 @@ const Home = () => {
                 <img
                   src="../../ipadpro.png"
                   alt="Ipad Pro"
-                  className="w-30 h-30"
+                  className="w-30 h-30 lg:w-48 lg:h-48"
                 />
               </div>
               <div className="ml-2">
@@ -1936,7 +1942,7 @@ const Home = () => {
                 <img
                   src="../../headset.png"
                   alt="headset"
-                  className="w-30 h-30"
+                  className="w-30 h-30 lg:w-48 lg:h-48"
                 />
               </div>
               <div className="ml-2">
@@ -2073,27 +2079,28 @@ const Home = () => {
         </div>
 
         <div>
-          <div className="border-b-2 border-[#E0E5EB] dark:border-[#333D4C] py-4 lg:mx-18">
-            <div className="mt-10 flex flex-row justify-between">
-              <p className="font-semibold text-2xl">Special offers for you</p>
-              <p className="text-sm mt-2 lg:hidden">View all {">"} </p>
-            </div>
-            <div className="flex flex-row mt-4 text-white">
-              <p className="bg-[#F55266] rounded-lg p-3">12d</p>
-              <p className="p-3 text-[#9CA3AF]">:</p>
-              <p className="bg-[#F55266] rounded-lg p-3 ">10h</p>
-              <p className="p-3 text-[#9CA3AF]">:</p>
-
-              <p className="bg-[#F55266] rounded-lg p-3 ">12m</p>
-              <p className="hidden lg:block text-sm mt-4 ml-[970px]">
-                View all {">"}{" "}
-              </p>
+          <div className="border-b-2 border-[#E0E5EB] dark:border-[#333D4C] py-4 lg:mx-24">
+            <div className="mt-10 flex flex-row justify-between items-center">
+              <div className="flex flex-row items-center gap-6">
+                <p className="font-semibold text-2xl lg:text-3xl">
+                  Special offers for you
+                </p>
+                <div className="flex flex-row text-white">
+                  <p className="bg-[#F55266] rounded-lg p-3">12d</p>
+                  <p className="p-3 text-[#9CA3AF]">:</p>
+                  <p className="bg-[#F55266] rounded-lg p-3">10h</p>
+                  <p className="p-3 text-[#9CA3AF]">:</p>
+                  <p className="bg-[#F55266] rounded-lg p-3">12m</p>
+                </div>
+              </div>
+              <p className="text-sm hidden lg:block">View all {">"}</p>
+              <p className="text-sm lg:hidden">View all {">"}</p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="flex flex-col items-center mt-6 -ml-2 relative">
+          <div className="grid grid-cols-2 lg:flex lg:flex-cols-4 gap-4 lg:gap-8 lg:ml-20">
+            <div className="flex flex-col items-center mt-6 -ml-2 lg:mr-12 relative">
               <div>
-                <div className="p-2 border-2  border-[#E0E5EB] dark:border-[#333D4C] rounded-lg absolute right-3">
+                <div className="p-2 border-2  border-[#E0E5EB] dark:border-[#333D4C] rounded-lg absolute right-3 lg:hidden">
                   <svg
                     width="12"
                     height="12"
@@ -2127,7 +2134,7 @@ const Home = () => {
                 <img
                   src="../../xiaomiBuds.png"
                   alt="xiaomiBuds"
-                  className="w-30 h-30 mt-4"
+                  className="w-30 h-30 lg:w-56 lg:h-56 mt-4"
                 />
               </div>
               <div className="ml-2">
@@ -2194,12 +2201,15 @@ const Home = () => {
                   </svg>
                   <p className="text-[#9CA3AF] ml-2 text-xs">14</p>
                 </div>
-                <p className="mt-2 text-sm font-semibold">
+                <p className="mt-2 text-sm font-semibold lg:hidden">
                   Xiaomi Wireless Bud...
                 </p>
+                <p className="mt-2 text-sm font-semibold lg:block hidden">
+                  Xiaomi Wireless Buds Pro
+                </p>
                 <div className="flex flex-row justify-between items-center mt-4">
-                  <p className="font-bold font-inter mt-2 text-xl">$340.99</p>
-                  <div className="rounded-lg  bg-[#EEF1F6] dark:bg-[#333D4C] h-10 w-10">
+                  <p className="font-bold font-inter mt-2 text-xl ">$129.99</p>
+                  <div className="rounded-lg  bg-[#EEF1F6] dark:bg-[#333D4C] h-10 w-10 ">
                     <svg
                       width="16"
                       height="16"
@@ -2252,10 +2262,343 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <div className="flex-col items-center mt-6 relative hidden lg:mx-12 lg:ml-12 lg:block">
+              <div>
+                <div className="p-2 border-2  border-[#E0E5EB] dark:border-[#333D4C] rounded-lg absolute right-3 lg:hidden">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 11.875C11.931 11.875 11.875 11.931 11.875 12C11.875 12.069 11.931 12.125 12 12.125C12.069 12.125 12.125 12.069 12.125 12C12.125 11.931 12.069 11.875 12 11.875ZM10.125 12C10.125 10.9645 10.9645 10.125 12 10.125C13.0355 10.125 13.875 10.9645 13.875 12C13.875 13.0355 13.0355 13.875 12 13.875C10.9645 13.875 10.125 13.0355 10.125 12Z"
+                      fill="#333D4C"
+                      className="dark:fill-[#E0E5EB]"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 4.875C11.931 4.875 11.875 4.93096 11.875 5C11.875 5.06904 11.931 5.125 12 5.125C12.069 5.125 12.125 5.06904 12.125 5C12.125 4.93096 12.069 4.875 12 4.875ZM10.125 5C10.125 3.96447 10.9645 3.125 12 3.125C13.0355 3.125 13.875 3.96447 13.875 5C13.875 6.03553 13.0355 6.875 12 6.875C10.9645 6.875 10.125 6.03553 10.125 5Z"
+                      fill="#333D4C"
+                      className="dark:fill-[#E0E5EB]"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 18.875C11.931 18.875 11.875 18.931 11.875 19C11.875 19.069 11.931 19.125 12 19.125C12.069 19.125 12.125 19.069 12.125 19C12.125 18.931 12.069 18.875 12 18.875ZM10.125 19C10.125 17.9645 10.9645 17.125 12 17.125C13.0355 17.125 13.875 17.9645 13.875 19C13.875 20.0355 13.0355 20.875 12 20.875C10.9645 20.875 10.125 20.0355 10.125 19Z"
+                      fill="#333D4C"
+                      className="dark:fill-[#E0E5EB]"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="../../iwatch.png"
+                  alt="iwatch"
+                  className="w-30 h-30 lg:w-56 lg:h-56 mt-4"
+                />
+              </div>
+              <div className="ml-2">
+                <div className="flex  gap-1">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <p className="text-[#9CA3AF] ml-2 text-xs">142</p>
+                </div>
+                <p className="mt-2 text-sm font-semibold">
+                  Smart Watch Series 7, White
+                </p>
+                <div className="flex flex-row justify-between items-center mt-4">
+                  <p className="font-bold font-inter mt-2 text-xl">$429.00</p>
+                  <div className="rounded-lg  bg-[#EEF1F6] dark:bg-[#333D4C] h-10 w-10 lg:ml-20">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="m-3"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9 20.875C8.93096 20.875 8.875 20.931 8.875 21C8.875 21.069 8.93096 21.125 9 21.125C9.06904 21.125 9.125 21.069 9.125 21C9.125 20.931 9.06904 20.875 9 20.875ZM7.125 21C7.125 19.9645 7.96447 19.125 9 19.125C10.0355 19.125 10.875 19.9645 10.875 21C10.875 22.0355 10.0355 22.875 9 22.875C7.96447 22.875 7.125 22.0355 7.125 21Z"
+                        fill="#181D25"
+                        className="dark:fill-[#E0E5EB]"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20 20.875C19.931 20.875 19.875 20.931 19.875 21C19.875 21.069 19.931 21.125 20 21.125C20.069 21.125 20.125 21.069 20.125 21C20.125 20.931 20.069 20.875 20 20.875ZM18.125 21C18.125 19.9645 18.9645 19.125 20 19.125C21.0355 19.125 21.875 19.9645 21.875 21C21.875 22.0355 21.0355 22.875 20 22.875C18.9645 22.875 18.125 22.0355 18.125 21Z"
+                        fill="#181D25"
+                        className="dark:fill-[#E0E5EB]"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.125 1C0.125 0.516751 0.516751 0.125 1 0.125H5C5.41705 0.125 5.77613 0.419337 5.85798 0.828275L6.71797 5.125H23C23.2608 5.125 23.508 5.24131 23.6742 5.44224C23.8404 5.64316 23.9084 5.90776 23.8595 6.16391L22.2583 14.5605C22.1268 15.2223 21.7667 15.8168 21.2411 16.2399C20.7179 16.6611 20.0638 16.8857 19.3923 16.875H9.68765C9.01622 16.8857 8.3621 16.6611 7.83886 16.2399C7.31346 15.8169 6.95349 15.2227 6.82191 14.5612L5.15069 6.21131C5.14437 6.18584 5.13917 6.15994 5.13514 6.13365L4.28278 1.875H1C0.516751 1.875 0.125 1.48325 0.125 1ZM7.06823 6.875L8.53824 14.2195C8.58967 14.4785 8.73056 14.7111 8.93623 14.8767C9.1419 15.0423 9.39925 15.1302 9.66323 15.1252L9.68 15.125H19.4L19.4168 15.1252C19.6807 15.1302 19.9381 15.0423 20.1438 14.8767C20.3487 14.7117 20.4893 14.4802 20.5412 14.2224L20.5418 14.2195L21.9424 6.875H7.06823Z"
+                        fill="#181D25"
+                        className="dark:fill-[#E0E5EB]"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <svg
+                  width="150"
+                  height="5"
+                  viewBox="0 0 150 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="mt-4"
+                >
+                  <rect width="150" height="4" rx="2" fill="#EEF1F6" />
+                  <rect width="40" height="4" rx="2" fill="#F55266" />
+                </svg>
 
+                <p className="text-sm text-gray-[#6C727F] mt-2">
+                  Available:
+                  <span className="font-semibold dark:text-white text-[#181D25]">
+                    45
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div className="flex-col items-center mt-6 relative hidden lg:mx-12 lg:ml-12 lg:mr-18 lg:block">
+              <div>
+                <div className="p-2 border-2  border-[#E0E5EB] dark:border-[#333D4C] rounded-lg absolute right-3 lg:hidden">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 11.875C11.931 11.875 11.875 11.931 11.875 12C11.875 12.069 11.931 12.125 12 12.125C12.069 12.125 12.125 12.069 12.125 12C12.125 11.931 12.069 11.875 12 11.875ZM10.125 12C10.125 10.9645 10.9645 10.125 12 10.125C13.0355 10.125 13.875 10.9645 13.875 12C13.875 13.0355 13.0355 13.875 12 13.875C10.9645 13.875 10.125 13.0355 10.125 12Z"
+                      fill="#333D4C"
+                      className="dark:fill-[#E0E5EB]"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 4.875C11.931 4.875 11.875 4.93096 11.875 5C11.875 5.06904 11.931 5.125 12 5.125C12.069 5.125 12.125 5.06904 12.125 5C12.125 4.93096 12.069 4.875 12 4.875ZM10.125 5C10.125 3.96447 10.9645 3.125 12 3.125C13.0355 3.125 13.875 3.96447 13.875 5C13.875 6.03553 13.0355 6.875 12 6.875C10.9645 6.875 10.125 6.03553 10.125 5Z"
+                      fill="#333D4C"
+                      className="dark:fill-[#E0E5EB]"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 18.875C11.931 18.875 11.875 18.931 11.875 19C11.875 19.069 11.931 19.125 12 19.125C12.069 19.125 12.125 19.069 12.125 19C12.125 18.931 12.069 18.875 12 18.875ZM10.125 19C10.125 17.9645 10.9645 17.125 12 17.125C13.0355 17.125 13.875 17.9645 13.875 19C13.875 20.0355 13.0355 20.875 12 20.875C10.9645 20.875 10.125 20.0355 10.125 19Z"
+                      fill="#333D4C"
+                      className="dark:fill-[#E0E5EB]"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="../../nikoncamera.png"
+                  alt="nikonCamera"
+                  className="w-30 h-30 lg:w-56 lg:h-56 mt-4"
+                />
+              </div>
+              <div className="ml-2">
+                <div className="flex  gap-1">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0178 2.05738C12.8494 1.71607 12.5017 1.5 12.1211 1.5C11.7405 1.5 11.3929 1.71607 11.2244 2.05738L8.36686 7.84647L1.97649 8.78051C1.59993 8.83555 1.28725 9.09956 1.16988 9.46157C1.0525 9.82358 1.15077 10.2208 1.42339 10.4864L6.0466 14.9894L4.95551 21.351C4.89117 21.7261 5.04541 22.1053 5.35339 22.3291C5.66137 22.5528 6.06966 22.5823 6.40657 22.4051L12.1211 19.3998L17.8357 22.4051C18.1726 22.5823 18.5809 22.5528 18.8889 22.3291C19.1968 22.1053 19.3511 21.7261 19.2867 21.351L18.1956 14.9894L22.8189 10.4864C23.0915 10.2208 23.1897 9.82358 23.0724 9.46157C22.955 9.09956 22.6423 8.83555 22.2658 8.78051L15.8754 7.84647L13.0178 2.05738Z"
+                      fill="#FC9231"
+                    />
+                  </svg>
+                  <p className="text-[#9CA3AF] ml-2 text-xs">14</p>
+                </div>
+                <p className="mt-2 text-sm font-semibold">
+                  VRB01 Camera Nikon Max
+                </p>
+                <div className="flex flex-row justify-between items-center mt-4">
+                  <p className="font-bold font-inter mt-2 text-xl">$652.00</p>
+                  <div className="rounded-lg  bg-[#EEF1F6] dark:bg-[#333D4C] h-10 w-10 ">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="m-3"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9 20.875C8.93096 20.875 8.875 20.931 8.875 21C8.875 21.069 8.93096 21.125 9 21.125C9.06904 21.125 9.125 21.069 9.125 21C9.125 20.931 9.06904 20.875 9 20.875ZM7.125 21C7.125 19.9645 7.96447 19.125 9 19.125C10.0355 19.125 10.875 19.9645 10.875 21C10.875 22.0355 10.0355 22.875 9 22.875C7.96447 22.875 7.125 22.0355 7.125 21Z"
+                        fill="#181D25"
+                        className="dark:fill-[#E0E5EB]"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20 20.875C19.931 20.875 19.875 20.931 19.875 21C19.875 21.069 19.931 21.125 20 21.125C20.069 21.125 20.125 21.069 20.125 21C20.125 20.931 20.069 20.875 20 20.875ZM18.125 21C18.125 19.9645 18.9645 19.125 20 19.125C21.0355 19.125 21.875 19.9645 21.875 21C21.875 22.0355 21.0355 22.875 20 22.875C18.9645 22.875 18.125 22.0355 18.125 21Z"
+                        fill="#181D25"
+                        className="dark:fill-[#E0E5EB]"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.125 1C0.125 0.516751 0.516751 0.125 1 0.125H5C5.41705 0.125 5.77613 0.419337 5.85798 0.828275L6.71797 5.125H23C23.2608 5.125 23.508 5.24131 23.6742 5.44224C23.8404 5.64316 23.9084 5.90776 23.8595 6.16391L22.2583 14.5605C22.1268 15.2223 21.7667 15.8168 21.2411 16.2399C20.7179 16.6611 20.0638 16.8857 19.3923 16.875H9.68765C9.01622 16.8857 8.3621 16.6611 7.83886 16.2399C7.31346 15.8169 6.95349 15.2227 6.82191 14.5612L5.15069 6.21131C5.14437 6.18584 5.13917 6.15994 5.13514 6.13365L4.28278 1.875H1C0.516751 1.875 0.125 1.48325 0.125 1ZM7.06823 6.875L8.53824 14.2195C8.58967 14.4785 8.73056 14.7111 8.93623 14.8767C9.1419 15.0423 9.39925 15.1302 9.66323 15.1252L9.68 15.125H19.4L19.4168 15.1252C19.6807 15.1302 19.9381 15.0423 20.1438 14.8767C20.3487 14.7117 20.4893 14.4802 20.5412 14.2224L20.5418 14.2195L21.9424 6.875H7.06823Z"
+                        fill="#181D25"
+                        className="dark:fill-[#E0E5EB]"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <svg
+                  width="150"
+                  height="5"
+                  viewBox="0 0 150 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="mt-4 "
+                >
+                  <rect width="150" height="4" rx="2" fill="#EEF1F6" />
+                  <rect width="40" height="4" rx="2" fill="#F55266" />
+                </svg>
+
+                <p className="text-sm text-gray-[#6C727F] mt-2">
+                  Available:
+                  <span className="font-semibold dark:text-white text-[#181D25]">
+                    13
+                  </span>
+                </p>
+              </div>
+            </div>
             <div className="flex flex-col items-center mt-6 -ml-2 relative">
               <div>
-                <div className="p-2 border-2  border-[#E0E5EB] dark:border-[#333D4C] rounded-lg absolute right-3">
+                <div className="p-2 border-2  border-[#E0E5EB] dark:border-[#333D4C] rounded-lg absolute right-3 lg:hidden">
                   <svg
                     width="12"
                     height="12"
@@ -2289,11 +2632,16 @@ const Home = () => {
                 <img
                   src="../../iphone14.png"
                   alt="iphone 14"
-                  className="w-30 h-30 mt-4"
+                  className="w-30 h-30 mt-4 lg:hidden"
+                />
+                <img
+                  src="../../iphone14blue.png"
+                  alt="iphone 14"
+                  className="lg:w-56 lg:h-56 mt-4 lg:block hidden"
                 />
               </div>
               <div className="ml-2">
-                <div className="flex  gap-1">
+                <div className="flex gap-1">
                   <svg
                     width="14"
                     height="14"
@@ -2358,8 +2706,11 @@ const Home = () => {
                   </svg>
                   <p className="text-[#9CA3AF] ml-2 text-xs">58</p>
                 </div>
-                <p className="mt-2 text-sm font-semibold">
+                <p className="mt-2 text-sm font-semibold lg:hidden">
                   Apple iPhone 14 128...
+                </p>
+                <p className="mt-2 text-sm font-semibold hidden lg:block">
+                  Apple iPhone 14 128GB Blue
                 </p>
                 <div className="flex flex-row justify-between items-center mt-3">
                   <p className="font-bold font-inter mt-2 text-xl">$899.00</p>
@@ -2419,7 +2770,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 mt-16 lg:px-16">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 mt-16 lg:px-24 lg:mb-8">
           <div className="border-1 border-[#E0E5EB] dark:border-[#333D4C] rounded-lg h-26 w-42 py-8 px-6">
             <img src="../../apple.png" alt="" />
           </div>
@@ -2436,7 +2787,9 @@ const Home = () => {
             <img src="../../sony.png" alt="" />
           </div>
           <div className="border-1 border-[#E0E5EB] dark:border-[#333D4C] rounded-lg h-26 w-42 py-11 px-7 relative">
-            <p className="text-center text-[#E0E5EB]">All brands</p>
+            <p className="text-center text-[#333D4C] dark:text-[#E0E5EB]">
+              All brands
+            </p>
             <svg
               width="18"
               height="18"
